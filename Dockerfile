@@ -24,7 +24,7 @@ RUN pip install \
   matplotlib \
   scipy
 
-RUN pip install git+git://github.com/geopandas/geopandas.git
+RUN pip install git+https://github.com/geopandas/geopandas.git
 
 RUN mkdir /home/jupyter
 WORKDIR /home/jupyter
