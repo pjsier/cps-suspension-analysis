@@ -11,8 +11,8 @@ docker build -t cps .
 ```
 
 Then, after it finishes, run
-`docker run -v /ABSOLUTE/PATH/cps-suspension-analysis:/home/jupyter -p 80:8080 -d cps`
+`docker run -v /ABSOLUTE/PATH/cps-suspension-analysis:/home/jupyter -p 80:8888 -d cps`
 and access the repo at the IP indicated by running `docker-machine ip cps`
 
-To end the process, run `eval $(docker-machine env cps)` and then `docker ps` to get
-the container ID, and then `docker rm -f CONTAINER_ID` to end the process.
+To end the process, run `docker ps` to get the container ID, and then
+`docker rm -f CONTAINER_ID` to end the process.
